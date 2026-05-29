@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="draw.io" version="22.0.0">
+  <diagram id="etd-concept" name="ETD Concept">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- Title -->
+        <mxCell id="title" value="Fig.2 Cold-State vs Real-State Deviation and ETD Unification Concept" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="20" width="600" height="30" as="geometry" />
+        </mxCell>
+        <!-- Left: Cold State Box -->
+        <mxCell id="cold_box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F4FD;strokeColor=#4A90D9;strokeWidth=2;arcSize=8;" vertex="1" parent="1">
+          <mxGeometry x="50" y="80" width="350" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="cold_title" value="Cold State (CST Simulation)&#xa;冷态理想模型" style="text;html=1;align=center;fontSize=13;fontStyle=1;fontColor=#2C5F8A;" vertex="1" parent="1">
+          <mxGeometry x="100" y="90" width="250" height="40" as="geometry" />
+        </mxCell>
+        <!-- Cold state features -->
+        <mxCell id="cold_geom" value="✓ Perfect Geometry&#xa;   (完美几何)" style="text;html=1;align=left;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="80" y="145" width="180" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="cold_uniform" value="✓ Uniform Emission&#xa;   (均匀发射)" style="text;html=1;align=left;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="80" y="185" width="180" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="cold_temp" value="✓ Room Temperature&#xa;   (室温, 无热效应)" style="text;html=1;align=left;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="80" y="225" width="200" height="35" as="geometry" />
+        </mxCell>
+        <!-- Cold MIG schematic (simplified) -->
+        <mxCell id="cold_mig" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#4A90D9;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="280" width="250" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="cold_mig_label" value="Ideal MIG Geometry&#xa;(aligned, symmetric)" style="text;html=1;align=center;fontSize=10;fontColor=#4A90D9;" vertex="1" parent="1">
+          <mxGeometry x="140" y="320" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cold_output" value="Output: y_cold = f_cold(x)" style="text;html=1;align=center;fontSize=11;fontStyle=2;fontColor=#2C5F8A;" vertex="1" parent="1">
+          <mxGeometry x="100" y="420" width="250" height="30" as="geometry" />
+        </mxCell>
+        <!-- Right: Real State Box -->
+        <mxCell id="real_box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDF2E9;strokeColor=#D4770B;strokeWidth=2;arcSize=8;" vertex="1" parent="1">
+          <mxGeometry x="700" y="80" width="350" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="real_title" value="Real State (Operational)&#xa;真实运行工况" style="text;html=1;align=center;fontSize=13;fontStyle=1;fontColor=#8B4513;" vertex="1" parent="1">
+          <mxGeometry x="750" y="90" width="250" height="40" as="geometry" />
+        </mxCell>
+        <!-- Three deviation sources -->
+        <mxCell id="dev1" value="✗ Thermal Expansion&#xa;   (热膨胀: ΔR~0.2mm)" style="text;html=1;align=left;fontSize=11;fontColor=#CC3300;" vertex="1" parent="1">
+          <mxGeometry x="730" y="145" width="220" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="dev2" value="✗ Mechanical Deformation&#xa;   (机械形变: ±0.05mm)" style="text;html=1;align=left;fontSize=11;fontColor=#CC3300;" vertex="1" parent="1">
+          <mxGeometry x="730" y="185" width="240" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="dev3" value="✗ Non-uniform Emission&#xa;   (非均匀发射: 活性层退化)" style="text;html=1;align=left;fontSize=11;fontColor=#CC3300;" vertex="1" parent="1">
+          <mxGeometry x="730" y="225" width="260" height="35" as="geometry" />
+        </mxCell>
+        <!-- Real MIG schematic (distorted) -->
+        <mxCell id="real_mig" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D4770B;strokeWidth=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="280" width="250" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="real_mig_label" value="Deformed MIG&#xa;(expanded, shifted, degraded)" style="text;html=1;align=center;fontSize=10;fontColor=#D4770B;" vertex="1" parent="1">
+          <mxGeometry x="790" y="320" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="real_output" value="Output: y_real ≠ y_cold" style="text;html=1;align=center;fontSize=11;fontStyle=2;fontColor=#8B4513;" vertex="1" parent="1">
+          <mxGeometry x="750" y="420" width="250" height="30" as="geometry" />
+        </mxCell>
+        <!-- Center: ETD Unification Arrow -->
+        <mxCell id="etd_arrow_box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F8E8;strokeColor=#27AE60;strokeWidth=2;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="430" y="150" width="240" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="etd_title_center" value="ETD Unification&#xa;等效热偏移统一" style="text;html=1;align=center;fontSize=12;fontStyle=1;fontColor=#1B7340;" vertex="1" parent="1">
+          <mxGeometry x="460" y="160" width="180" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="etd_desc1" value="All deviations →&#xa;Equivalent offset" style="text;html=1;align=center;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="470" y="200" width="160" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="etd_formula_box" value="Δx_ETD = g(V_a, I_b, T)" style="text;html=1;align=center;fontSize=11;fontStyle=1;fontColor=#1B7340;" vertex="1" parent="1">
+          <mxGeometry x="455" y="250" width="190" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="etd_arrow_symbol" value="⟹" style="text;html=1;align=center;fontSize=24;fontColor=#27AE60;" vertex="1" parent="1">
+          <mxGeometry x="520" y="280" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="etd_result" value="x + Δx_ETD" style="text;html=1;align=center;fontSize=11;fontStyle=2;fontColor=#1B7340;" vertex="1" parent="1">
+          <mxGeometry x="480" y="315" width="140" height="25" as="geometry" />
+        </mxCell>
+        <!-- Connecting arrows -->
+        <mxCell id="arrow_cold_to_etd" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;strokeColor=#4A90D9;strokeWidth=2;exitX=1;exitY=0.5;" edge="1" parent="1" source="cold_box" target="etd_arrow_box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow_etd_to_real" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;strokeColor=#D4770B;strokeWidth=2;exitX=1;exitY=0.5;" edge="1" parent="1" source="etd_arrow_box" target="real_box">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- Bottom equation -->
+        <mxCell id="bottom_eq_box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F0F0F0;strokeColor=#666666;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="520" width="600" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="bottom_eq" value="Core ETD Equation: f_cold(x + Δx_ETD) ≈ y_real" style="text;html=1;align=center;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="530" width="500" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="bottom_desc" value="All real-world deviations are absorbed into a single equivalent geometric offset vector" style="text;html=1;align=center;fontSize=11;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="300" y="560" width="500" height="25" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
